@@ -1,0 +1,11 @@
+{
+  "name": "toaster",
+  "version": "1.0.0",
+  "description": "Design a Toaster",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Rish.Madan",
+  "license": "ISC"
+}

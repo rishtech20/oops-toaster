@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "target": "ES2015",
+      "module": "commonjs",
+      "outDir": "./dist",
+    },
+    "include": ["*.ts", "@types/toaster.interface.ts", "toasterComponents/controlPanel.ts", "toasterComponents/slot.ts", "items/item.ts"]
+  }
