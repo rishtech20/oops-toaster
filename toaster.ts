@@ -52,6 +52,14 @@ export default class Toaster implements IToaster {
     }
 
     setToasterConfiguration(config: IToastingConfiguration): void {
+        if (config.temperature > Toaster.MAX_TEMP || config.temperature < Toaster.MIN_TEMP) {
+            throw new Error('Invalid temperature');
+        }
+
+        if (config.timer > Toaster.MAX_TIME || config.timer < Toaster.MIN_TIME) {
+            throw new Error('Invalid timer');
+        }
+
         this.toastingConfig = config;
     }
 }

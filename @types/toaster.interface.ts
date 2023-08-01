@@ -41,7 +41,5 @@ export enum ToastLevels {
 
 export interface IItem {
     toastLevel: string;
-    startToast(): void;
-    stopToast(): void;
-    setItem(): void;
+    getToastLevel(toastingConfig: IToastingConfiguration): string;
 }
